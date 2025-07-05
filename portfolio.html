@@ -1,7 +1,123 @@
-<main>
-  <h2>Portfólio</h2>
-  <p>Estes são alguns dos projetos que desenvolvi durante a minha formação:</p>
-  <ul>
-    <li><a href="#">Dashboard de Vendas do xbox com excel</a></li>
-  </ul>
-</main>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Maria Eduarda - Desenvolvedora em formação</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Portfólio</h2>
+    <p>Clique em uma linguagem para ver os projetos:</p>
+
+    <!-- Menu de ícones -->
+    <div class="linguagens-menu">
+      <div class="icone" onclick="mostrarProjetos('html-css')" id="btn-html-css">
+        <i class="fab fa-html5"></i>
+        <span>HTML & CSS</span>
+      </div>
+      <div class="icone" onclick="mostrarProjetos('python')" id="btn-python">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+      <div class="icone" onclick="mostrarProjetos('excel')" id="btn-excel">
+        <i class="fas fa-file-excel"></i>
+        <span>Excel</span>
+      </div>
+      <div class="icone" onclick="mostrarProjetos('java')" id="btn-java">
+        <i class="fab fa-java"></i>
+        <span>Java</span>
+      </div>
+    </div>
+
+    <!-- Projetos HTML & CSS -->
+    <section class="projetos html-css">
+      <h3>HTML & CSS</h3>
+      <div class="portfolio-grid">
+        <div class="card" onclick="window.open('https://github.com/mariaems99/mirror-fashion.git')">
+          <h4>Mirror Fashion</h4>
+          <p>Site de e-commerce desenvolvido com HTML e CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos Python -->
+    <section class="projetos python">
+      <h3>Python</h3>
+      <div class="portfolio-grid">
+        <div class="card" onclick="window.open('https://github.com/mariaems99/Exercicios_Beecrowd_Python.git')">
+          <h4>Exercícios Beecrowd</h4>
+          <p>Resolução de problemas de lógica e algoritmos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos Excel -->
+    <section class="projetos excel">
+      <h3>Excel</h3>
+      <div class="portfolio-grid">
+        <div class="card" onclick="window.open('https://github.com/mariaems99/organizador_de_declaracao_de_imposto_de_renda.git')">
+          <h4>Organizador de IR</h4>
+          <p>Planilha para controle de dados fiscais</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/ferramenta_controle_de_investimentos.git')">
+          <h4>Controle de Investimentos</h4>
+          <p>Planilha para acompanhar aportes e rendimentos</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/dashboard_de_vendas_do_xbox__com_excel.git')">
+          <h4>Dashboard de Vendas do Xbox</h4>
+          <p>Visualização de dados com gráficos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos Java -->
+    <section class="projetos java">
+      <h3>Java</h3>
+      <div class="portfolio-grid">
+        <div class="card" onclick="window.open('https://github.com/mariaems99/UltraEmojiCombate.git')">
+          <h4>UltraEmojiCombate</h4>
+          <p>Simulação de lutas com POO</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/projeto-pessoas.git')">
+          <h4>Projeto Pessoas</h4>
+          <p>Classes, herança e encapsulamento</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/projeto-pessoas-parte2.git')">
+          <h4>Projeto Pessoas - Parte 2</h4>
+          <p>Métodos abstratos e polimorfismo</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/exercicio-polimorfismo-sobreposicao.git')">
+          <h4>Polimorfismo com Sobreposição</h4>
+          <p>Herança e sobrescrita de métodos</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/exercicio-polimorfismo-sobrecarga.git')">
+          <h4>Polimorfismo com Sobrecarga</h4>
+          <p>Métodos sobrecarregados</p>
+        </div>
+        <div class="card" onclick="window.open('https://github.com/mariaems99/exercicio-final.git')">
+          <h4>Exercício Final</h4>
+          <p>Projeto integrador com POO avançada</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
