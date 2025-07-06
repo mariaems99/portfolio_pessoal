@@ -8,27 +8,58 @@
   <!-- Font Awesome para os ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Seu CSS personalizado -->
+  <!-- CSS personalizado -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Maria Eduarda - Desenvolvedora em formação</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-  <h2>Entre em contato comigo</h2>
-  <p>Clique nos ícones abaixo para me encontrar:</p>
-  <div class="icones-contato">
-    <a href="mailto:eduardamauricio99@hmail.com" target="_blank" title="Email">
-      <i class="fas fa-envelope"></i>
-      <span>Email</span>
-    </a>
-    <a href="https://www.linkedin.com/in/maria-eduarda-457606321" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-      <span>LinkedIn</span><br>
-    </a>
-    <a href="https://github.com/mariaems99" target="_blank" title="GitHub">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-  </div>
-</main>
+    <h2>Entre em contato comigo</h2>
+    <p>Clique nos ícones abaixo para me encontrar:</p>
+
+    <div class="icones-contato">
+      <a href="mailto:eduardamauricio99@hmail.com" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/maria-eduarda-457606321" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/mariaems99" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <h3>Ou envie uma mensagem diretamente por aqui:</h3>
+    <form id="form-contato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <p id="mensagem-sucesso" style="display: none;">Mensagem enviada com sucesso! ✅</p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

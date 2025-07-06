@@ -1,10 +1,11 @@
 // Alerta de boas-vindas
 window.addEventListener('load', () => {
   alert('Bem-vindo(a) ao meu portfólio pessoal!');
+  mostrarProjetos('html-css'); // Mostra HTML & CSS por padrão
 });
 
 // Validação simples do formulário
-function validarFormulario(event) {
+document.getElementById('form-contato')?.addEventListener('submit', function (event) {
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
   const mensagem = document.getElementById('mensagem').value.trim();
@@ -12,11 +13,13 @@ function validarFormulario(event) {
   if (!nome || !email || !mensagem) {
     alert('Por favor, preencha todos os campos antes de enviar.');
     event.preventDefault();
+  } else {
+    document.getElementById('mensagem-sucesso').style.display = 'block';
+    this.reset();
   }
-}
+});
 
-
-
+// Função para mostrar projetos por categoria
 function mostrarProjetos(classe) {
   // Esconde todas as seções
   const secoes = document.querySelectorAll(".projetos");
@@ -40,6 +43,3 @@ function mostrarProjetos(classe) {
     botaoAtivo.classList.add("ativo");
   }
 }
-
-// Mostrar HTML & CSS por padrão ao carregar
-window.onload = () => mostrarProjetos('html-css');
