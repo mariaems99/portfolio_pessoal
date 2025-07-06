@@ -1,6 +1,6 @@
 # portfolio_pessoal
 
-# portfolio_pessoal
+
 
 🏠 Página: index.html
 Essa é a página inicial do meu portfólio pessoal. É o ponto de entrada para quem acessa meu site e deseja conhecer mais sobre mim, minha formação e os projetos que venho desenvolvendo.
